@@ -1,7 +1,20 @@
 {
-  "name": "Mi PWA",
-  "short_name": "MiApp",
-  "start_url": "/",
-  "display": "standalone",
-  "icons": ""
+    "name": "Mi PWA",
+    "short_name": "PWA",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "theme_color": "#06D6A0",
+    "background_color": "#06D6A0",
+    "icons": [
+        {
+            "src": "./icons/icono192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./icons/icono144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ]
 }
