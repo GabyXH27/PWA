@@ -4,7 +4,8 @@ loadHeader();
 loadFooter();
 //Lógica del service worker 
 const BASE_PATH = window.location.hostname.includes("github.io")
-  ? "/pwa_test" // nombre exacto del repositorio
+  //? "/pwa_test" // nombre exacto del repositorio
+  ? "/PWA" // nombre exacto del repositorio
   : ""; // en local (XAMPP)
 
 if ("serviceWorker" in navigator) {
