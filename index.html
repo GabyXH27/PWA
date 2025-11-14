@@ -1,52 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
-<!--./index.html-->
-<!--/pwa_test/ para trabajar será con rutas absolutas-->
-<!--Actualizar la hoja de estilo según sea conveniente-->
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Potencias y números reales</title>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/style.css">
-
+    <title>Matemáticas: Potencias y raíz cuadrada y Números enteros</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="icons/icono.ico" type="image/x-icon">
 </head>
 
 <body>
-    <!-- CONTENIDO -->
-    <div id="header"></div>
+    <header>
+        <h1>📘 Matemáticas: Potencias y raíz cuadrada y Números enteros</h1>
+        <nav>
+            <a href="#introduccion">Inicio</a>
+            <a href="#potencias">Potencias y raíz cuadrada</a>
+            <a href="#enteros">Números enteros</a>
+            <a href="#referencias">Referencias</a>
+        </nav>
+    </header>
+
     <main>
-        <!-- SECCIÓN 1: Números Reales -->
-        <h1>Bienvenid@</h1>
-        
-        <section id="numeros-reales">
-            <h2>Números Reales</h2>
-            <div class="tema-lista">
-                <ul>
-                    <li><a href="#enteros">Los números enteros</a></li>
-                    <li><a href="#problemas-enteros">Problemas con números enteros</a></li>
-                    <li><a href="#recta-entera">La recta entera y comparación</a></li>
-                    <li><a href="#coordenadas">Coordenadas cartesianas</a></li>
-                </ul>
-            </div>
+        <section id="introduccion">
+            <h2>Bienvenidos</h2>
+            <p class="intro">
+            Esta página educativa te ayudará a comprender los temas fundamentales
+            de matemáticas relacionados con las potencias y raíz cuadrada junto
+            con y los números enteros. ¡Aprende paso a paso con ejemplos claros y
+            temas organizados! 🎓✨
+            </p>
         </section>
 
-        <!-- SECCIÓN 2: Potencias -->
         <section id="potencias">
-            <h2>Potencias</h2>
+            <h2>Unidad 1: Potencia y raíz cuadrada</h2>
+            <p class="intro">
+            Las potencias permiten simplificar multiplicaciones repetidas. Aprende
+            sus reglas y cómo aplicarlas fácilmente.
+            </p>
+            <div class="tema-lista">
+            <ul>
+                <li><a href="#potencias">1.1 Potencias</a></li>
+                <li><a href="temas/potencias/potenciasBase10.html">1.2 Potencias de base 10</a></li>
+                <li>
+                <a href="#polinomica">1.3 Expresión polinómica de un número</a>
+                </li>
+                <li><a href="#raiz">1.4 Raíz cuadrada</a></li>
+            </ul>
+            </div>
+        </section>
+
+        <section id="enteros">
+            <h2>Unidad 2: Números enteros</h2>
+            <p class="intro">
+            Los números enteros son fundamentales en matemáticas. Aprende a
+            compararlos y ubicarlos en la recta numérica.
+            </p>
             <div class="tema-lista">
                 <ul>
-                    <li><a href="temas/potencias/potencias-base10.html">Potencias de base 10</a></li>
-                    <li><a href="#expresion-polinomica">Expresión polinómica de un número</a></li>
-                    <li><a href="#raiz-cuadrada">Raíz cuadrada</a></li>
+                    <li>
+                        <a href="temas/numeros/">2.1 Los números enteros</a>
+                    </li>
+                    <li>
+                        <a href="temas/numeros/">2.2 Problema con números enteros</a>
+                    </li>
+                    <li>
+                        <a href="temas/numeros/">2.3 La recta entera. Comparación de números enteros</a>
+                    </li>
+                    <li>
+                        <a href="temas/numeros/coordenadasCartensianas.html">2.4 Coordenadas cartesianas</a>
+                    </li>
                 </ul>
             </div>
         </section>
 
+        <section id="referencias">
+            <h2>Referencia</h2>
+            <p class="intro">
+                Almodóvar, J. A., Rodríguez, M. (2009). MATEMATICAS 6 PRIMARIA LA CASA DEL SABER SANTILLANA. España: Santillana Educación, S.L..
+            </p>
+            <p class="intro">
+                SISTEMA DE COORDENADAS CARTESIANAS. (2011, abril). unam.mx. http://dcb.fi-c.unam.mx/CoordinacionesAcademicas/Matematicas/CapsulasAntecedentes/simetria.pdf
+            </p>
+            
+        </section>
     </main>
-    <div id="footer"></div>
-    <script type="module" src="./assets/js/main.js" defer></script>
 
+    <footer>
+        <p>Potencias y raíz cuadrada y Números enteros © 2025 | Equipo Scrum</p>
+    </footer>
 </body>
-
 </html>
