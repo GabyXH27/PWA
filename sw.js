@@ -1,14 +1,14 @@
 const CACHE_NAME = "pwa2-cache-v5";
-//Actualizar la versión de la cache y esperar un momento hasta que se vea reflejado en el sitio web
+// Actualizar la versión de la cache y esperar un momento hasta que se vea reflejado en el sitio web
 // El programa para ser instalado me dió problemas, ver como implmentarlo correctamente
 const FILES_TO_CACHE = [
   "./",
   "./index.html",
   "./manifest.json",
   "./sw.js",
-  ".//icons/icono.ico",
+  "./icons/icono.ico",
   "./icons/icono144.png",
-  "./icons/icono192.pmg",
+  "./icons/icono192.png",
   "./assets/css/style.css",
   "./assets/css/ejerciciosCoordenadas.css",
   "./assets/img/plano.png",
