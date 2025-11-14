@@ -1,4 +1,4 @@
-const CACHE_NAME = "pwa2-cache-v4";
+const CACHE_NAME = "pwa2-cache-v5";
 //Actualizar la versión de la cache y esperar un momento hasta que se vea reflejado en el sitio web
 // El programa para ser instalado me dió problemas, ver como implmentarlo correctamente
 const FILES_TO_CACHE = [
