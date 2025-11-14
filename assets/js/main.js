@@ -18,3 +18,9 @@ if ("serviceWorker" in navigator) {
       console.error("Fallo al registrar ServiceWorker:", err);
     });
 }
+
+// coordenadasCartesianas.html
+document.addEventListener("DOMContentLoaded", () => {
+   console.log("Módulo cargado correctamente");
+   // tu lógica nueva
+});
