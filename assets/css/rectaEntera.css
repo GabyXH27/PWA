@@ -1,0 +1,67 @@
+.pregunta-box {
+    background: #E8F0FE;
+    border-left: 6px solid #118AB2;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+}
+
+.opcion {
+    display: block;
+    margin: 5px 0;
+}
+
+.retro {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.barra-resultados {
+    background: #E1EFFA;
+    border-left: 6px solid #118AB2;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: #0b4f68;
+}
+
+.tarjeta-tip {
+
+    border-left:5px solid #118AB2;
+    padding:12px;
+    margin:12px 0;
+    border-radius:8px;
+}
+
+.drag-container {
+    margin-top: 40px;
+}
+
+.drag-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.drag-numero {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #FFD166;
+    border-radius: 8px;
+    cursor: grab;
+    font-weight: bold;
+    user-select: none;
+}
+
+.drag-canvas {
+    background: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.drag-mensaje {
+    font-weight: bold;
+    margin-top: 10px;
+}
