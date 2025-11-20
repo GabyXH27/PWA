@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+< lang="es">
 
 <head>
     <meta charset="UTF-8" />
@@ -10,10 +10,134 @@
     <script type="module" src="../../assets/js/main.js"></script>
     <link rel="icon" href="icons/icono.ico" type="image/x-icon">
 </head>
+<body>
+    <header>
+        <h1>Raíz Cuadrada</h1>
+        <nav>
+            <a href="../../index.html">Inicio</a>
+            <a href="#concepto">Concepto</a>
+            <a href="#razonamiento">Razonamiento</a>
+            <a href="#ejemplos">Ejemplos</a>
+            <a href="#ejercicios">Ejercicios</a>
+            <a href="#referencias">Referencias</a>
+        </nav>
+    </header>
 
-<div id="header"></div>
-<div id="footer"></div>
+    <main>
+        <section id="concepto">
+            <h2>Concepto</h2>
+            <p class="intro">
+                La raíz cuadrada de un número es aquel valor que, al multiplicarse por sí mismo, da como resultado el número original. 
+                Se representa con el símbolo √. Por ejemplo: √9 = 3, porque 3 × 3 = 9.
+            </p>
+            <p class="intro">
+                La raíz cuadrada se usa en la vida diaria para medir áreas de superficies, calcular longitudes de lados de cuadrados o resolver problemas de geometría, física y matemáticas. 
+                También nos ayuda a entender la relación inversa de la multiplicación.
+            </p>
+            <p class="intro">
+                Solo se puede calcular la raíz cuadrada de números no negativos en los números reales. Cuando un número no tiene raíz exacta, se puede expresar en forma decimal o como raíz irracional.
+            </p>
+        </section>
 
+        <section id="razonamiento">
+            <h2>Razonamiento</h2>
+            <p class="intro">
+                Conocer la raíz cuadrada permite resolver problemas matemáticos y cotidianos de manera más rápida. Por ejemplo, si conocemos el área de un cuadrado, podemos hallar la longitud de sus lados usando la raíz cuadrada. 
+                También ayuda a comprender conceptos de álgebra y lógica matemática.
+            </p>
+        </section>
 
+        <section id="ejemplos">
+            <h2>Ejemplos</h2>
+            <div class="tema-lista">
+                <ul>
+                    <li style="color: blue;"><a>√4 = 2, porque 2 × 2 = 4</a></li>
+                    <li style="color: red;"><a>√16 = 4, porque 4 × 4 = 16</a></li>
+                    <li style="color: green;"><a>√25 = 5, porque 5 × 5 = 25</a></li>
+                    <li style="color: orange;"><a>√36 = 6, porque 6 × 6 = 36</a></li>
+                    <li style="color: purple;"><a>√49 = 7, porque 7 × 7 = 49</a></li>
+                </ul>
+            </div>
+        </section>
 
+        <section id="ejercicios">
+            <h2>Ejercicios de Raíz Cuadrada</h2>
+            <p class="intro">
+                Selecciona la opción correcta para cada raíz cuadrada:
+            </p>
+
+            <div id="ejerciciosContainer" class="tema-lista"></div>
+
+            <button id="generar">Generar ejercicios aleatorios</button>
+            <button id="verificar">Verificar respuestas</button>
+            <p id="resultado"></p>
+
+            <script>
+                const ejerciciosContainer = document.getElementById('ejerciciosContainer');
+
+                function generarEjercicios() {
+                    ejerciciosContainer.innerHTML = '';
+                    const numeros = [4, 9, 16, 25, 36, 49, 64, 81, 100];
+                    const seleccionados = [];
+
+                    // Elegir 5 números aleatorios distintos
+                    while (seleccionados.length < 5) {
+                        const n = numeros[Math.floor(Math.random() * numeros.length)];
+                        if (!seleccionados.includes(n)) seleccionados.push(n);
+                    }
+
+                    seleccionados.forEach((num, index) => {
+                        const raiz = Math.sqrt(num);
+                        const opciones = [raiz];
+                        // generar 2 distractores
+                        while (opciones.length < 3) {
+                            const distractor = Math.floor(Math.random() * 12) + 1;
+                            if (!opciones.includes(distractor)) opciones.push(distractor);
+                        }
+                        opciones.sort(() => Math.random() - 0.5); // mezclar opciones
+
+                        const li = document.createElement('li');
+                        li.innerHTML = `<p>${index+1}. √${num} = ?</p>` +
+                            opciones.map(op => `<label><input type="radio" name="q${index+1}" value="${op}"> ${op}</label><br>`).join('');
+                        ejerciciosContainer.appendChild(li);
+                    });
+                }
+
+                document.getElementById('generar').addEventListener('click', () => {
+                    generarEjercicios();
+                    document.getElementById('resultado').textContent = '';
+                });
+
+                document.getElementById('verificar').addEventListener('click', () => {
+                    let aciertos = 0;
+                    const liElements = ejerciciosContainer.querySelectorAll('li');
+                    liElements.forEach((li, index) => {
+                        const seleccionada = li.querySelector(`input[name=q${index+1}]:checked`);
+                        if (seleccionada && Number(seleccionada.value) === Math.sqrt([4, 9, 16, 25, 36, 49, 64, 81, 100].find(n => li.innerHTML.includes(n)))) {
+                            aciertos++;
+                        }
+                    });
+                    document.getElementById('resultado').textContent = `Has acertado ${aciertos} de 5 preguntas.`;
+                });
+
+                // Generar ejercicios al cargar la página
+                generarEjercicios();
+            </script>
+        </section>
+
+        <section id="referencias">
+            <h2>Referencias</h2>
+            <p class="intro">
+                Baldor, A. (2009). Álgebra. México: Editorial Patria.
+            </p>
+            <p class="intro">
+                Raíz cuadrada. (2023). Matemáticas básicas. https://www.matematicasbasicas.com/raiz-cuadrada
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Raíz Cuadrada © 2025 | Equipo Scrum</p>
+    </footer>
+</body>
 </html>
