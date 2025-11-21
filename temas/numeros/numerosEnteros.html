@@ -4,15 +4,102 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matemáticas: Potencias y raíz cuadrada y Números enteros</title>
+    <title>Números Enteros</title>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/numerosEnteros.css" />
     <script type="module" src="../../assets/js/main.js"></script>
+    <script defer src="../../assets/js/numerosEnteros.js"></script>
     <link rel="icon" href="icons/icono.ico" type="image/x-icon">
 </head>
 
-<div id="header"></div>
-<div id="footer"></div>
+<body>
+    <div id="header"></div>
+    <main class="contenedor">
 
+        <h1>Números Enteros</h1>
+        <nav class="nav-interno">
+            <a href="#concepto">Concepto</a>
+            <a href="#razonamiento">Razonamiento</a>
+            <a href="#ejemplos">Ejemplos</a>
+            <a href="#ejercicios">Ejercicios</a>
+            <a href="#referencias">Referencias</a>
+        </nav>
 
+        <section id="concepto" class="concepto">
+            <h2>Concepto</h2>
+            <p>
+                Los números enteros forman el conjunto de números compuesto por los números naturales,
+                sus opuestos o inversos negativos y el número cero. Este conjunto se representa con la
+                letra <strong>Z</strong>.
+            </p>
+
+            <p>
+                Incluye valores positivos, negativos y el cero, siendo fundamentales para expresar
+                pérdidas, ganancias, temperaturas, altitudes y cambios en diversas magnitudes matemáticas.
+            </p>
+
+            <p>
+                Los enteros positivos se escriben sin signo (+), mientras que los negativos llevan
+                el signo (−). Ejemplos: +7, -3, 0.
+            </p>
+        </section>
+
+        <section id="razonamiento" class="razonamiento">
+            <h2>Razonamiento con Números Enteros</h2>
+            <p>
+                Para operar con números enteros se debe comprender la <strong>recta numérica</strong>.
+                Los valores aumentan hacia la derecha y disminuyen hacia la izquierda.
+            </p>
+
+            <p>
+                Reglas esenciales:
+                <br>• (−)(−) = +  
+                <br>• (+)(−) = −  
+                <br>• En suma y resta se comparan magnitudes.
+                <br>• En multiplicación y división, los signos determinan el resultado.
+            </p>
+        </section>
+
+        <section id="ejemplos" class="ejemplos">
+            <h2>Ejemplos</h2>
+
+            <div class="ejemplo-card">
+                <p><strong>Suma:</strong> −5 + 8 = 3</p>
+                <p><strong>Resta:</strong> 4 − (−2) = 6</p>
+                <p><strong>Multiplicación:</strong> (−3) × (−2) = 6</p>
+                <p><strong>División:</strong> 12 ÷ (−3) = −4</p>
+                <p><strong>Valor absoluto:</strong> |−9| = 9</p>
+            </div>
+
+            <p>
+                Estos ejemplos permiten visualizar cómo se comportan los enteros en diferentes operaciones.
+            </p>
+        </section>
+
+        <section id="ejercicios" class="ejercicios">
+            <h2>Ejercicios Interactivos</h2>
+
+            <p>Resuelve operaciones con números enteros y comprueba tus respuestas.</p>
+
+            <div id="contenedor-ejercicios"></div>
+
+            <button id="btn-nuevo" class="btn">Generar nuevo ejercicio</button>
+        </section>
+
+        <section id="referencias" class="referencias">
+            <h2>Referencias</h2>
+
+            <p>Equipo editorial, Etecé. (2025, 25 septiembre).
+                <i>Números enteros - Qué son, operaciones y ejemplos.</i> Concepto.</p>
+            <p>Stewart, J. (2016). <i>Cálculo de una variable</i>. Cengage Learning.</p>
+            <p>Larson & Hostetler. (2014). <i>Preálgebra</i>. McGraw Hill.</p>
+        </section>
+
+    </main>
+
+    <!-- FOOTER DINÁMICO -->
+    <div id="footer"></div>
+
+</body>
 </html>
