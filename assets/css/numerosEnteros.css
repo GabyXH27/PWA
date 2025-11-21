@@ -31,8 +31,6 @@
     transform: translateY(-3px);
     box-shadow: 0 6px 14px rgba(0,0,0,0.25);
 }
-
-/* Cuando el enlace representa la sección actual */
 .nav-interno a:active,
 .nav-interno a:focus {
     background: linear-gradient(135deg, #0a4d8c 0%, #0d6efd 100%);
@@ -41,7 +39,6 @@
     box-shadow: 0 6px 14px rgba(0,0,0,0.25);
 }
 
-/* Animación de aparición */
 @keyframes aparecer {
     from {
         opacity: 0;
