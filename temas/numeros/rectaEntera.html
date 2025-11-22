@@ -1,18 +1,157 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matemáticas: Potencias y raíz cuadrada y Números enteros</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.3 La recta entera y comparación de números</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../../assets/css/style.css" />
     <script type="module" src="../../assets/js/main.js"></script>
     <link rel="icon" href="icons/icono.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/rectaEntera.css" />
+
 </head>
 
-<div id="header"></div>
-<div id="footer"></div>
+<body>
 
+<header>
+    <h1>📏Unidad 2:La recta entera y comparación de números enteros📏</h1>
+</header>
 
+<main>
+
+    <section>
+        <h2>1️⃣ Concepto: La recta entera</h2>
+
+        <p class="intro">
+            La <strong>recta entera</strong> es una línea horizontal que utilizamos para representar y comparar
+            todos los <strong>números enteros</strong>. Cada número se coloca en un punto específico, respetando
+            el orden natural de los valores.
+        </p>
+
+        <p class="intro">
+            El número <strong>0</strong> es un punto muy importante, ya que divide la recta en dos lados:
+        </p>
+
+        <ul>
+            <li>
+                A la <strong>izquierda</strong> del 0 están los 
+                <strong>números enteros negativos</strong> 
+                (−1, −2, −3, …), que representan cantidades menores que cero.
+            </li>
+            <li>
+                A la <strong>derecha</strong> del 0 se encuentran los 
+                <strong>números enteros positivos</strong> 
+                (1, 2, 3, …), que representan cantidades mayores que cero.
+            </li>
+        </ul>
+
+        <img src="../../assets/img/rectaNumerica.png" alt="Recta numérica de ejemplo">
+
+        <p class="intro">
+            Cada número ocupa un lugar exacto en la recta. Esto nos permite identificar relaciones 
+            importantes como:
+        </p>
+
+        <ul>
+            <li>El número que está más a la <strong>izquierda</strong> siempre es el <strong>menor</strong>.</li>
+            <li>El número que está más a la <strong>derecha</strong> siempre es el <strong>mayor</strong>.</li>
+            <li>La distancia entre dos números representa cuántas unidades hay entre ellos.</li>
+        </ul>
+
+        <p class="intro">
+            Por ejemplo, entre −3 y 4 hay una distancia de 7 unidades.  
+            Esto permite comparar valores, ubicar números y resolver problemas con facilidad.  
+            La recta entera es una herramienta visual que te ayuda a entender mejor operaciones como 
+            suma, resta, ordenamiento y comparación de números enteros.
+        </p>
+
+        <p class="intro">
+            A lo largo de este tema, trabajaremos con la recta entera para aprender a identificar posiciones,
+            interpretar direcciones y resolver ejercicios tal como lo harías en tu libro, pero de manera más
+            interactiva y visual.
+        </p>
+    </section>
+
+    <section>
+        <h2>2️⃣ Interactúa con la recta entera</h2>
+
+        <p class="intro">
+            Selecciona un número y comprueba si está a la izquierda o derecha del 0.
+        </p>
+
+        <label><strong>Elige un número:</strong></label>
+        <select id="numeroSelect">
+            <option value="" disabled selected>Selecciona...</option>
+        </select>
+
+        <p id="respuestaInteraccion" class="intro"></p>
+
+        <canvas id="rectaCanvas" width="900" height="120"
+            style="background:white; border-radius:10px; margin-top:15px; box-shadow:0 3px 6px rgba(0,0,0,0.1);">
+        </canvas>
+        <div class="tarjeta-tip">
+    💡      <strong>Tip:</strong> Si un número está más a la derecha en la recta, siempre es mayor.
+        </div>
+
+        <section class="drag-container">
+            <h2 class="drag-title">2️•2️⃣Arrastra el número a la recta</h2>
+
+            <p class="intro">
+                Arrastra el número hacia el punto correcto en la recta entera.
+            </p>
+
+            <div>
+                <span id="numeroArrastrable" class="drag-numero">-4</span>
+            </div>
+
+            <canvas id="rectaDragCanvas" width="900" height="120" class="drag-canvas"></canvas>
+
+            <p id="mensajeDrag" class="drag-mensaje"></p>
+        </section>
+
+    </section>
+    <script src="../../assets/js/interacionRecta.js"></script>
+
+    <section>
+        <h2>3️⃣ Resuelve ejercicios</h2>
+
+        <p class="intro">Selecciona las respuestas correctas. Cada vez verás nuevas preguntas.</p>
+
+        <div id="contenedorPreguntas"></div>
+
+        <div id="barraResultados" class="barra-resultados"></div>
+
+        <button id="btnGenerarPreguntas" class="btn-generar">
+        🔄 Generar nuevas preguntas
+        </button>
+
+    </section>
+
+    <script src="../../assets/js/ejercicioRectaEntera.js"></script>
+
+    <section id="referencias">
+        <h2>Referencias</h2>
+
+        <p class="intro">
+            Almodóvar, J. A., Rodríguez, M. (2009). <em>Matemáticas 6 Primaria La Casa del Saber Santillana</em>. 
+            España: Santillana Educación, S.L.
+        </p>
+
+        <p class="intro">
+            Paola Andrea, Mr. Matemáticas, & Martha Cecilia Ortiz Sánchez. 
+            <em>Números enteros: Recta Numérica</em>.  
+            Tem a: Enteros, Números.  
+            Nota: Material consultado sobre representación de números enteros en la recta numérica.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    <p>Potencias y raíz cuadrada y Números enteros © 2025 | Equipo Scrum</p>
+</footer>
+
+</body>
 </html>
