@@ -1,0 +1,109 @@
+/* Estilos específicos para los ejercicios */
+.ejercicios-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ejercicio {
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.pregunta {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.opcion {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.opcion:hover {
+    background-color: #f0f0f0;
+}
+
+.opcion.seleccionada {
+    background-color: #cce5ff;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+    font-weight: bold;
+}
+
+.opcion.seleccionada:hover {
+    background-color: #cce5ff;
+}
+
+.opcion.correcta {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.opcion.incorrecta {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.resultado {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.resultado.correcto {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.resultado.incorrecto {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.estadisticas {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.1em;
+}
