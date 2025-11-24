@@ -1,0 +1,16 @@
+button{
+    background-color: aqua;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    margin: 5px;
+    padding: 5px;
+}
+
+input[type=number]{
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: 5px;
+    padding-top: 5px;
+}

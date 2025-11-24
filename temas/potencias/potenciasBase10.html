@@ -7,13 +7,97 @@
     <title>Matemáticas: Potencias y raíz cuadrada y Números enteros</title>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../../assets/css/style.css" />
+    <link rel="stylesheet" href="../../assets/css/potenciasBaseDiez.css">
     <script type="module" src="../../assets/js/main.js"></script>
     <link rel="icon" href="icons/icono.ico" type="image/x-icon">
 </head>
 
-<div id="header"></div>
-<div id="footer"></div>
+<body>
+    <div id="header"></div>
+
+    <main>
+
+        <h2>Potencia base 10</h2>
+
+        <section id="introduccion">
+            <p class="intro"><b>Definición: </b>Las potencias base 10 son operaciones donde el numero 10 se multiplica
+                varias
+                veces
+                por si
+                mismo.<br>
+                Por ejemplo:
+                <b>10² = 100</b><br>
+                Donde el exponente (el numero 2 en este caso), indica cuantas veces se va a multiplicar la base (el
+                numero
+                10), es decir:<br>
+                <b>10² = 10 x 10 = 100</b>
+            </p><br>
+        </section>
+
+        <h2>Ejemplos</h2>
+
+        <section id="introduccion">
+            <p class="intro">10^3 = 10 x 10 x 10 = 1000<br>
+                10^4 = 10 x 10 x 10 x 10 = 10000<br>
+                10^5 = 10 x 10 x 10 x 10 x 10= 100000
+            </p>
+        </section>
+
+        <h2>Ejercicios</h2>
+
+        <section id="introduccion">
+            <p class="intro">En esta sección deberas responder 3 ejercicios de forma aleatoria.</p>
+            <div>
+
+                <div class="ejercicio">
+                    <span>Ejercicio 1: </span>
+                    <span id="n1">10</span>
+                    <span> ^ </span>
+                    <span id="p1"></span>
+                    <input type="number" id="res1" required>
+                </div>
+
+                <div class="ejercicio">
+                    <span>Ejercicio 2: </span>
+                    <span id="n2">10</span>
+                    <span> ^ </span>
+                    <span id="p2"></span>
+                    <input type="number" id="res2" required>
+                </div>
+
+                <div class="ejercicio">
+                    <span>Ejercicio 3: </span>
+                    <span id="n3">10</span>
+                    <span> ^ </span>
+                    <span id="p3"></span>
+                    <input type="number" id="res3" required>
+                </div><br>
+
+                <div id="asiertos">
+                    <span>Asiertos totales =</span>
+                    <span id="total"></span>
+                    <span id="textoFinal"></span>
+                </div>
 
 
+            </div><br>
+            <button onclick="calcularResultados()">Calcular</button>
+            <button onclick="asignarExponente()">Generar nuevos ejercicios</button>
+        </section>
+
+        <section id="introduccion">
+            <h2>Referencias</h2>
+            <p class="intro">Cálculo de Potencias 5º EDUCACIÓN PRIMARIA <a href="https://www.matematicasinclusivas.com/5o-quinto-educacion-primaria/actividades-potencias/" target="_blank">matematicasinclusivas.com</a></p>
+        </section>
+
+        <section id="introduccion">
+            <h2>Derechos de Autor</h2>
+            <p class="intro">Copyright 2025 © Matemáticas Inclusivas</p>
+        </section>
+
+    </main>
+    <div id="footer"></div>
+</body>
+<script src="../../assets/js/ejercicioPotenciasDiez.js"></script>
 
 </html>
