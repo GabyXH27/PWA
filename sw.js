@@ -1,4 +1,4 @@
-const CACHE_NAME = "pwa2-cache-v7";
+const CACHE_NAME = "pwa2-cache-v8";
 // Actualizar la versión de la cache y esperar un momento hasta que se vea reflejado en el sitio web
 // El programa para ser instalado me dió problemas, ver como implmentarlo correctamente
 
@@ -24,7 +24,7 @@ const FILES_TO_CACHE = [
 
   "./assets/js/header.js",
   "./assets/js/main.js",
-  "./assets/js/ejerciciosCoordenadas.js",
+  "./assets/js/ejercicioCoordenadas.js",
   "./assets/js/planoCartesiano.js",
   "./assets/js/sistemaEjercicios.js",
   "./assets/js/ProblemasNumEnteroo.js",
@@ -42,7 +42,7 @@ const FILES_TO_CACHE = [
   "./temas/potencias/potencias.html",
   "./temas/potencias/raiz.html",
 
-  "./temas/numeros/coordenadasCartesianas.html",
+  "./temas/numeros/coordenadasCartensianas.html",
   "./temas/numeros/numerosEnteros.html",
   "./temas/numeros/problemaNumerosEnteros.html",
   "./temas/numeros/rectaEntera.html",
