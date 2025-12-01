@@ -1,11 +1,11 @@
-const CACHE_NAME = "pwa2-cache-v6";
+const CACHE_NAME = "pwa2-cache-v7";
 // Actualizar la versión de la cache y esperar un momento hasta que se vea reflejado en el sitio web
 // El programa para ser instalado me dió problemas, ver como implmentarlo correctamente
+
 const FILES_TO_CACHE = [
   "./",
   "./index.html",
   "./manifest.json",
-  "./sw.js",
 
   "./icons/icono.ico",
   "./icons/icono144.png",
@@ -50,18 +50,12 @@ const FILES_TO_CACHE = [
 
 self.addEventListener("install", (event) => {
   console.log("Service Worker: Instalando...");
+  self.skipWaiting();
+
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
-      console.log("Cacheando archivos");
+      console.log("Cacheando archivos...");
       return cache.addAll(FILES_TO_CACHE);
-    })
-  );
-});
-
-self.addEventListener("fetch", (event) => {
-  event.respondWith(
-    caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
     })
   );
 });
@@ -74,5 +68,15 @@ self.addEventListener("activate", (event) => {
         keys.filter((k) => k !== CACHE_NAME).map((k) => caches.delete(k))
       )
     )
+  );
+
+  clients.claim();
+});
+
+self.addEventListener("fetch", (event) => {
+  event.respondWith(
+    caches.match(event.request).then((response) => {
+      return response || fetch(event.request);
+    })
   );
 });
