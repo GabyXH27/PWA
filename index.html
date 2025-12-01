@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="manifest.json">
     <title>Matemáticas: Potencias y raíz cuadrada y Números enteros</title>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -95,6 +96,20 @@
         <p>Potencias y raíz cuadrada y Números enteros © 2025 | Equipo Scrum</p>
     </footer>
 
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+            .then(
+                function(registration) {
+                    console.log('Registro del SW satisfactorio con ámbito: ', registration.scope); 
+                } 
+            ) .catch(
+                function(err){
+                    console.log('El registro del SW falló: ', err);
+                } 
+            );
+        }
+    </script>
 </body>
 
 </html>
